@@ -11,6 +11,10 @@
 #if !defined(_RECEIVE_SHADOWS_OFF)
     #if defined(_MAIN_LIGHT_SHADOWS)
         #define MAIN_LIGHT_CALCULATE_SHADOWS
+
+        #if !defined(_MAIN_LIGHT_SHADOWS_CASCADE)
+            #define REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR
+        #endif
     #endif
 
     #if defined(_ADDITIONAL_LIGHT_SHADOWS)
@@ -18,12 +22,8 @@
     #endif
 #endif
 
-#if !defined(_MAIN_LIGHT_SHADOWS_CASCADE)
-#define REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR
-#endif
-
 #if defined(_ADDITIONAL_LIGHTS) || defined(_MAIN_LIGHT_SHADOWS_CASCADE)
-#define REQUIRES_WORLD_SPACE_POS_INTERPOLATOR
+    #define REQUIRES_WORLD_SPACE_POS_INTERPOLATOR
 #endif
 
 SCREENSPACE_TEXTURE(_ScreenSpaceShadowmapTexture);
@@ -255,11 +255,7 @@ half AdditionalLightRealtimeShadow(int lightIndex, float3 positionWS)
 
 float4 GetShadowCoord(VertexPositionInputs vertexInput)
 {
-#if defined(_MAIN_LIGHT_SHADOWS_CASCADE)
-    return ComputeScreenPos(vertexInput.positionCS);
-#else
     return TransformWorldToShadowCoord(vertexInput.positionWS);
-#endif
 }
 
 float3 ApplyShadowBias(float3 positionWS, float3 normalWS, float3 lightDirection)

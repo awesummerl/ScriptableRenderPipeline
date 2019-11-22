@@ -23,6 +23,7 @@ Shader "Universal Render Pipeline/Particles/Simple Lit"
 
         [HideInInspector] _SmoothnessSource("Smoothness Source", Float) = 0.0
         [ToggleOff] _SpecularHighlights("Specular Highlights", Float) = 1.0
+        _ReceiveShadows("Receive Shadows", Float) = 1.0
 
         // -------------------------------------
         // Particle specific
@@ -96,6 +97,7 @@ Shader "Universal Render Pipeline/Particles/Simple Lit"
             #pragma shader_feature _EMISSION
             #pragma shader_feature _ _SPECGLOSSMAP _SPECULAR_COLOR
             #pragma shader_feature _GLOSSINESS_FROM_BASE_ALPHA
+            #pragma shader_feature _RECEIVE_SHADOWS_OFF
 
             // -------------------------------------
             // Particle Keywords

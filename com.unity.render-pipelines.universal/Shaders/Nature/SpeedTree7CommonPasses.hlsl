@@ -75,12 +75,10 @@ void InitializeInputData(SpeedTreeVertexOutput input, half3 normalTS, out InputD
         inputData.viewDirectionWS = SafeNormalize(inputData.viewDirectionWS);
     #endif
 
-    #if defined(MAIN_LIGHT_CALCULATE_SHADOWS)
-        #if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
-            inputData.shadowCoord = input.shadowCoord;
-        #else
-            inputData.shadowCoord = TransformWorldToShadowCoord(inputData.positionWS);
-        #endif
+    #if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
+        inputData.shadowCoord = input.shadowCoord;
+    #elif defined(MAIN_LIGHT_CALCULATE_SHADOWS)
+        inputData.shadowCoord = TransformWorldToShadowCoord(inputData.positionWS);
     #else
         inputData.shadowCoord = float4(0, 0, 0, 0);
     #endif

@@ -41,7 +41,7 @@ struct VaryingsParticle
     float4 projectedPosition        : TEXCOORD6;
 #endif
 
-#if defined(MAIN_LIGHT_CALCULATE_SHADOWS) && defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
+#if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
     float4 shadowCoord              : TEXCOORD7;
 #endif
 
@@ -74,12 +74,10 @@ void InitializeInputData(VaryingsParticle input, half3 normalTS, out InputData o
 
     output.viewDirectionWS = viewDirWS;
 
-#if defined(MAIN_LIGHT_CALCULATE_SHADOWS)
-    #if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
-        output.shadowCoord = input.shadowCoord;
-    #else
-        output.shadowCoord = TransformWorldToShadowCoord(output.positionWS);
-    #endif
+#if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
+    output.shadowCoord = input.shadowCoord;
+#elif defined(MAIN_LIGHT_CALCULATE_SHADOWS)
+    output.shadowCoord = TransformWorldToShadowCoord(output.positionWS);
 #else
     output.shadowCoord = float4(0, 0, 0, 0);
 #endif
@@ -138,7 +136,7 @@ VaryingsParticle ParticlesLitVertex(AttributesParticle input)
     output.projectedPosition = vertexInput.positionNDC;
 #endif
 
-#if defined(MAIN_LIGHT_CALCULATE_SHADOWS) && defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
+#if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
     output.shadowCoord = GetShadowCoord(vertexInput);
 #endif
 
