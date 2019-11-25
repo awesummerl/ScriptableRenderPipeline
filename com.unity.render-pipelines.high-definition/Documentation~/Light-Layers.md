@@ -42,7 +42,7 @@ You can now use the **Light Layers** drop-down in the **Shadows** section to set
 
 ## Renaming Light Layers
 
-By default, in the UI for Lights and Mesh Renderers, Light Layers are named **Light Layer 1-7**. To more easily differentiate between them, you can give each Light Layer a specific name. To do this, open your [HDRP Asset](HDRP-Asset.html) and go to **Lighting > Light Layers** section. Here you can set the name of each Light Layer individually.
+By default, in the UI for Lights and Mesh Renderers, Light Layers are named **Light Layer 1-7**. To more easily differentiate between them, you can give each Light Layer a specific name. To do this, open your [HDRP Asset](HDRP-Asset.html) and go to **Lighting > Light Layers**. Here you can set the name of each Light Layer individually.
 
 ## Example scenario for Light Layers
 
