@@ -97,3 +97,18 @@ If you want some sample scenes to use with SRP, you can find them at the [Script
 Clone the repo into your project's Assets\ folder.
 
 Previous iterations of the ScriptableRenderPipeline repo owned this sample scene data, in case you noticed it before, and wondered where it went.
+
+### Builds
+[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/build-badge.svg?branch=automation%2Fpackage-badges)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/build-info?branch=automation%2Fpackage-badges)
+
+[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependencies-badge.svg?branch=automation%2Fpackage-badges)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependencies-info?branch=automation%2Fpackage-badges)
+
+[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependants-badge.svg)
+(https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependants-info)
+
+[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/warnings-badge.svg?branch=automation%2Fpackage-badges)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/warnings-info?branch=automation%2Fpackage-badges)
+
+![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/release-badge.svg)
+
+![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/candidates-badge.svg)
+
