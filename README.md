@@ -99,16 +99,16 @@ Clone the repo into your project's Assets\ folder.
 Previous iterations of the ScriptableRenderPipeline repo owned this sample scene data, in case you noticed it before, and wondered where it went.
 
 ### Builds
-[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/build-badge.svg?branch=automation%2Fpackage-badges)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/build-info?branch=automation%2Fpackage-badges)
 
-[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependencies-badge.svg?branch=automation%2Fpackage-badges)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependencies-info?branch=automation%2Fpackage-badges)
+[![](https://badge-proxy.cds.internal.unity3d.com/95fc0a37-8067-48e3-ad10-abca1ce43dc5)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/build-info?branch=automation%2Fpackage-badges)
 
-[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependants-badge.svg)
-(https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependants-info)
+[![](https://badge-proxy.cds.internal.unity3d.com/fc79e112-aa09-4c50-a324-efbb9bf9865a)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependencies-info?branch=automation%2Fpackage-badges)
 
-[![](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/warnings-badge.svg?branch=automation%2Fpackage-badges)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/warnings-info?branch=automation%2Fpackage-badges)
+[![](https://badge-proxy.cds.internal.unity3d.com/74b65e22-f1c3-4b3a-a6e9-6c1528314bc4)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/dependants-info)
 
-![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/release-badge.svg)
+[![](https://badge-proxy.cds.internal.unity3d.com/2a7cb55e-1260-4b0c-87b8-99a90b13f68d)](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/warnings-info?branch=automation%2Fpackage-badges)
 
-![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.render-pipelines.core/candidates-badge.svg)
+![ReleaseBadge](https://badge-proxy.cds.internal.unity3d.com/90be70c3-cd3c-4275-940c-8ca0262fb711)
+
+![ReleaseBadge](https://badge-proxy.cds.internal.unity3d.com/73c999ed-fd64-4df1-a6b8-77df8cbfe50f)
 
